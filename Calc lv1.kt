@@ -11,7 +11,6 @@ fun main() {
     var calc = Calculator(num1 , op, num2)
     calc.operation()
 }
-
 class Calculator(num1: Double, op:String, num2: Double) {
     var num1:Double = num1
     var op:String = op
@@ -32,7 +31,5 @@ class Calculator(num1: Double, op:String, num2: Double) {
         else if(op == "/" ){
             println("${num1} ${op} ${num2} = ${num1/num2}")
         }
-
-
     }
 }

@@ -11,9 +11,8 @@ fun main() {
 
     var calc = Calculator3(num1, op,  num2)
     calc.operation()
-
-
 }
+
 open class Calculator3 (num1: Double, op:String, num2: Double) {
     var num1 = num1
     var op = op
@@ -53,6 +52,7 @@ open class Calculator3 (num1: Double, op:String, num2: Double) {
     }
 }
 class AddOperation (num1: Double, op:String, num2: Double) : Calculator3(num1,op,num2) {
+
     override fun operation() {
         println("${num1} 더하기 ${num2} 결과는 ${num1 + num2} 입니다.")
     }
